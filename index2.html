@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Projekt II</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="io">
+        <table id="inputs">
+          <div class="input" id="age">
+            <tr>
+              <td class="left">
+                <label for="age" class="boldy">Věk:</label>
+              </td>
+              <td class="right">
+                <input type="number" min="35" max="125" step="0.5" value="80" id="age_numb" />
+                <label for="age_numb">let</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="range" min="35" max="125" step="0.5" value="80" id="age_range"  /></td>
+            </tr>
+          </div>
+          <div class="input" id="sex">
+            <tr>
+              <td colspan="2">
+                <p class="boldy">Pohlaví:</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="left">
+                <input type="radio" name="sex" id="man" value="man" class="imgradio" checked="checked">
+                <label for="man" class="imglabel" id="labelman">
+                  <div class="labeldiv active" id="mandiv">
+                    <img src="Photos/male.png">
+                    Muž
+                  </div>
+                </label>
+              </td>
+              <td class="right">
+                <input type="radio" name="sex" id="woman" value="woman" class="imgradio">
+                <label for="woman" class="imglabel" id="labelwomen">
+                  <div class="labeldiv" id="womandiv">
+                    <img src="Photos/female.png">
+                    Žena
+                  </div> 
+                </label>
+              </td>
+            </tr>
+          </div>
+          <div class="input" id="smoking">
+            <tr>
+              <td colspan="2">
+                <p class="boldy">Kouření v aktuální době:</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="left">
+                <input type="radio" name="smoking" id="smoking_yes" value="yes" class="imgradio" checked="checked">
+                <label for="smoking_yes" id="labelsmoking">
+                  <div class="labeldiv active" id="smokingdiv">
+                    <img src="Photos/smoking.png">
+                    Ano
+                  </div>
+                </label>
+              </td>
+              <td class="right">
+                <input type="radio" name="smoking" id="smoking_no" value="no" class="imgradio">
+                <label for="smoking_no" id="labelnosmoking">
+                  <div class="labeldiv" id="nosmokingdiv">
+                    <img src="Photos/nosmoking.png">
+                    Ne
+                  </div>
+                </label>
+              </td>
+            </tr>
+          </div>
+          <div class="input" , id="cholesterol">
+            <tr>
+              <td class="left">
+                <label for="cholesterol" class="boldy">Cholesterol:</label>
+              </td>
+              <td class="right">
+                <input type="number" min="2.5" max="12" step="0.1" value="7.25" id="cholesterol_numb"  />
+                <label for="cholesterol_numb">mmol/l</label>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="range" min="2.5" max="12" step="0.1" value="7.25" id="cholesterol_range" />
+              </td>
+            </tr>
+          </div>
+          <div class="input" , id="blood">
+            <tr>
+              <td class="left">
+                <label for="blood" class="boldy">Systolický krevní tlak:</label>
+              </td>
+              <td class="right">
+                <input type="number" min="80" max="200" step="1" value="140" id="blood_numb" />
+                <label for="blood_numb">torr</label>
+              </td>
+            </tr>
+              <tr>
+                <td colspan="2">
+                  <input type="range" min="80" max="200" step="1" value="140" id="blood_range" />
+                </td>
+            </tr>
+          </div>
+        </table>
+        <div id="output">
+            <div id="result">
+                <div id="result_text">
+                    <p>Pravděpodobnost kardiovaskulární příhody v následujících 10 letech je:</p>
+                </div>
+                <div id="result_value">
+                    <p class="boldy">0.0 %</p>
+                </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+body {
+  background-color: rgb(36, 36, 36);
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  color: white;
+  padding: 0;
+  border: none;
+  margin: auto;
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background: none;
+  border-bottom: 0.1rem solid white;
+  margin-bottom: 0.1rem;
+  width: 4.4rem;
+}
+
+/*th,td {
+    outline: 1px solid white;
+}*/
+td {
+  padding: 0.5em;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+.left {
+  text-align: right;
+}
+
+.right {
+  text-align: left;
+}
+
+table {
+  margin: 0 auto;
+}
+
+img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.imgradio {
+  display: none !important;
+}
+
+.imglabel {
+  padding: 0%;
+}
+
+.labeldiv {
+  width: 6.5rem;
+  height: 8rem;
+  text-align: center;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+#labelman, #labelsmoking {
+  float: right;
+}
+
+#labelwoman, #labelnosmoking {
+  float: left;
+}
+
+.active {
+  outline: 2px solid white;
+}
+
+p {
+  margin: 0 auto;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: 0.4rem;
+  height: 0.8rem;
+  background: rgb(255, 255, 255);
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  outline: 0.3rem solid rgb(200, 200, 200);
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  outline: 0.3rem solid rgb(200, 200, 200);
+}
+
+.boldy {
+  font-weight: bold;
+}/*# sourceMappingURL=styles.css.map */
